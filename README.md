@@ -21,12 +21,12 @@ A simple and responsive form built with Tailwind CSS using Vite as the developme
 📂 Project Structure
 
 📦 project-root/
- ┣ 📄 index.html
- ┣ 📁 src/
- ┃ ┣ 📄 main.js         ← handles theme logic and toggle
- ┃ ┗ 📄 style.css       ← Tailwind directives and custom components
- ┣ 📄 tailwind.config.js
- ┣ 📄 package.json
+┣ 📄 index.html
+┣ 📁 src/
+┃ ┣ 📄 main.js ← handles theme logic and toggle
+┃ ┗ 📄 style.css ← Tailwind directives and custom components
+┣ 📄 tailwind.config.js
+┣ 📄 package.json
 
 🚀 Setup
 
@@ -35,9 +35,9 @@ npm run dev
 
 📸 Preview
 
+![Tailwind Dark Mode Form](./Tailwind-Dark-Mode-Form.JPG)
 
-
-Note: Make sure to add peer-checked:* classes to your safelist in Tailwind config to avoid purging animation classes.
+Note: Make sure to add peer-checked:\* classes to your safelist in Tailwind config to avoid purging animation classes.
 
 🛠️ Customization
 
@@ -76,12 +76,12 @@ Made with 💙 by Feras
 📂 هيكل المشروع
 
 📦 المشروع/
- ┣ 📄 index.html
- ┣ 📁 src/
- ┃ ┣ 📄 main.js         ← يتحكم في منطق التبديل بين الثيمات
- ┃ ┗ 📄 style.css       ← تعليمات Tailwind والتخصيصات
- ┣ 📄 tailwind.config.js
- ┣ 📄 package.json
+┣ 📄 index.html
+┣ 📁 src/
+┃ ┣ 📄 main.js ← يتحكم في منطق التبديل بين الثيمات
+┃ ┗ 📄 style.css ← تعليمات Tailwind والتخصيصات
+┣ 📄 tailwind.config.js
+┣ 📄 package.json
 
 🚀 التثبيت والتشغيل
 
@@ -90,9 +90,9 @@ npm run dev
 
 📸 المعاينة
 
+![Tailwind Dark Mode Form](./Tailwind-Dark-Mode-Form.JPG)
 
-
-ملاحظة: تأكد من إضافة peer-checked:* إلى safelist في ملف إعدادات Tailwind حتى لا تُحذف أثناء الإنتاج.
+ملاحظة: تأكد من إضافة peer-checked:\* إلى safelist في ملف إعدادات Tailwind حتى لا تُحذف أثناء الإنتاج.
 
 🛠️ التخصيص
 
@@ -107,4 +107,3 @@ npm run dev
 MIT — حر للاستخدام والتعديل.
 
 صنع بحب 💙 بواسطة فراس
-

@@ -4,10 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Test</title>
-    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <h1 class="text-red-500 text-3xl font-bold">Hi Tailwind!</h1>
-    <script type="module" src="/src/main.js"></script>
+    <div class="bg-blue-500 text-white p-5"></div>
+
+    <form class="form-center-sm relative" action="">
+      <label class="absolute w-[50px] h-[28px] top-0 right-0 m-2">
+        <input
+          type="checkbox"
+          class="opacity-0 w-0 h-0 peer"
+          id="themeToggle"
+          onchange="toggleDark()"
+        />
+        <span class="themeToggle"></span>
+      </label>
+
+      <label class="form-label" for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        class="form-input"
+        placeholder="Enter your name"
+      />
+
+      <label class="form-label" for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        class="form-input"
+        placeholder="Enter your email"
+      />
+
+      <label class="form-label" for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        class="form-input"
+        placeholder="Choose a password"
+      />
+
+      <label class="form-label flex items-center gap-2 self-start text-left">
+        <input type="checkbox" class="form-checkbox" />
+        I agree to the terms
+      </label>
+
+      <select name="country" class="form-select">
+        <option value="">Select Country</option>
+        <option value="egypt">Egypt</option>
+        <option value="yemen">Yemen</option>
+      </select>
+
+      <button type="button" class="btn-submit mt-4">Submit</button>
+    </form>
+
+    <div
+      id="theme-toast"
+      class="fixed top-4 right-4 bg-black text-white px-4 py-2 rounded shadow-md opacity-0 transition-opacity duration-300 z-50 pointer-events-none"
+    ></div>
+
+    <script type="module" src="./src/main.js"></script>
+    <script>
+      const themeToggle = document.getElementById("themeToggle");
+      const html = document.documentElement;
+      const toast = document.getElementById("theme-toast");
+
+      // دالة لعرض التوست
+      function showToast(message) {
+        toast.textContent = message;
+        toast.classList.remove("opacity-0");
+        toast.classList.add("opacity-100");
+
+        setTimeout(() => {
+          toast.classList.remove("opacity-100");
+          toast.classList.add("opacity-0");
+        }, 2000);
+      }
+
+      // إعداد الوضع عند تحميل الصفحة
+      const savedTheme = localStorage.getItem("theme");
+      const systemPrefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+
+      if (savedTheme === "dark" || (!savedTheme && systemPrefersDark)) {
+        html.classList.add("dark");
+        themeToggle.checked = true;
+      } else {
+        html.classList.remove("dark");
+        themeToggle.checked = false;
+      }
+
+      // تبديل الوضع عند الضغط
+      themeToggle.addEventListener("change", () => {
+        if (themeToggle.checked) {
+          html.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+          showToast("🌙 Dark mode enabled");
+        } else {
+          html.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+          showToast("☀️ Light mode enabled");
+        }
+      });
+    </script>
   </body>
 </html>
