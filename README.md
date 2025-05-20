@@ -34,7 +34,7 @@ npm install
 npm run dev
 
 📸 Preview
-
+https://tailwind-dark-mode-form.vercel.app/
 ![Tailwind Dark Mode Form](./Tailwind-Dark-Mode-Form.JPG)
 
 Note: Make sure to add peer-checked:\* classes to your safelist in Tailwind config to avoid purging animation classes.
@@ -89,7 +89,7 @@ npm install
 npm run dev
 
 📸 المعاينة
-
+https://tailwind-dark-mode-form.vercel.app/
 ![Tailwind Dark Mode Form](./Tailwind-Dark-Mode-Form.JPG)
 
 ملاحظة: تأكد من إضافة peer-checked:\* إلى safelist في ملف إعدادات Tailwind حتى لا تُحذف أثناء الإنتاج.
