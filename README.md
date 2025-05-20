@@ -33,9 +33,11 @@ A simple and responsive form built with Tailwind CSS using Vite as the developme
 npm install
 npm run dev
 
-📸 Preview
-https://tailwind-dark-mode-form.vercel.app/
-![Tailwind Dark Mode Form](./Tailwind-Dark-Mode-Form.JPG)
+## 📸 Preview
+
+🔗 [Live Demo](https://tailwind-dark-mode-form.vercel.app/)
+
+[![Tailwind Dark Mode Form](./Tailwind-Dark-Mode-Form.JPG)](https://tailwind-dark-mode-form.vercel.app/)
 
 Note: Make sure to add peer-checked:\* classes to your safelist in Tailwind config to avoid purging animation classes.
 
