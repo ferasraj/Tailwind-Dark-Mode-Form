@@ -91,8 +91,9 @@ npm install
 npm run dev
 
 📸 المعاينة
-https://tailwind-dark-mode-form.vercel.app/
-![Tailwind Dark Mode Form](./Tailwind-Dark-Mode-Form.JPG)
+🔗 [Live Demo](https://tailwind-dark-mode-form.vercel.app/)
+[![Tailwind Dark Mode Form](./Tailwind-Dark-Mode-Form.JPG)](https://tailwind-dark-mode-form.vercel.app/)
+
 
 ملاحظة: تأكد من إضافة peer-checked:\* إلى safelist في ملف إعدادات Tailwind حتى لا تُحذف أثناء الإنتاج.
 
