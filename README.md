@@ -1,143 +1,110 @@
-# Tailwind Starter Template 🚀
+🌙 Tailwind Dark Mode Form (Vite Project)
 
-A ready-to-use starter project with Tailwind CSS + Vite.  
-Perfect for anyone who wants to quickly launch a new project without repetitive setup.
+A simple and responsive form built with Tailwind CSS using Vite as the development environment.It supports Dark Mode, toggled via a custom switch component, with user preference saved using localStorage.
 
----
+✨ Features
 
-## 🧰 Technologies Used:
+✅ Built with Tailwind CSS
 
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Vite](https://vitejs.dev/)
-- [PostCSS](https://postcss.org/)
+⚡ Powered by Vite — super fast development
 
----
+🌙 Dark Mode support using class strategy
 
-## 🚀 How to Use:
+💾 Persists theme (light/dark) preference in localStorage
 
-1. **Copy this template repository:**
+🔄 Automatically detects system theme on first visit
 
-   > Click on the `Use this template` button at the top of the page
+📱 Fully responsive and mobile-friendly
 
-2. **Install dependencies:**
+🧪 Custom toggle switch with animation using ::before pseudo-element and peer utility
 
-```bash
+📂 Project Structure
+
+📦 project-root/
+ ┣ 📄 index.html
+ ┣ 📁 src/
+ ┃ ┣ 📄 main.js         ← handles theme logic and toggle
+ ┃ ┗ 📄 style.css       ← Tailwind directives and custom components
+ ┣ 📄 tailwind.config.js
+ ┣ 📄 package.json
+
+🚀 Setup
+
 npm install
-```
-
-3. **Start the development server:**
-
-```bash
 npm run dev
-```
 
----
+📸 Preview
 
-## ⚠️ Important Note:
 
-If you manually copied the files or started a new project from scratch, make sure to run:
 
-```bash
-npm init -y
-npm install -D tailwindcss postcss autoprefixer vite
-npx tailwindcss init -p
-```
+Note: Make sure to add peer-checked:* classes to your safelist in Tailwind config to avoid purging animation classes.
 
-Then ensure you have the following files properly configured:
+🛠️ Customization
 
-- `tailwind.config.js`
-- `postcss.config.js`
-- `vite.config.js`
-- `src/style.css` (with Tailwind directives)
-- `index.html` (linked to `/src/style.css`)
+You can extend or redesign the form easily with Tailwind's utility classes, or plug in plugins like:
 
----
+@tailwindcss/forms — for form styling
 
-## 🧪 Example Usage:
+@tailwindcss/typography — if you want to add blog-style content
 
-```html
-<h1 class="text-3xl text-blue-600 font-bold">Hello Tailwind!</h1>
-```
+📜 License
 
----
+MIT — feel free to use and modify.
 
-## ✅ Ready for personal or commercial projects.
+Made with 💙 by Feras
 
-Feel free to contribute or use it as a learning reference.
+🌙 نموذج Tailwind يدعم الوضع الداكن (مشروع Vite)
 
----
+نموذج بسيط وسريع الاستجابة مبني باستخدام Tailwind CSS ويعمل على بيئة Vite الحديثة.يدعم الوضع الداكن من خلال زر مخصص، ويتم حفظ تفضيل المستخدم باستخدام localStorage.
 
-## 💡 Created by: [@ferasraj](https://github.com/ferasraj)
+✨ المميزات
 
----
+✅ مبني باستخدام Tailwind CSS
 
-# قالب تيلويند جاهز 🚀
+⚡ يعمل بواسطة Vite — تطوير سريع جداً
 
-مشروع جاهز للاستخدام مع Tailwind CSS و Vite.  
-مفيد لأي شخص يريد يبدأ مشروع بسرعة بدون إعداد ممل.
+🌙 دعم للوضع الداكن باستخدام class
 
----
+💾 يحفظ تفضيل المستخدم للوضع (فاتح/داكن) في localStorage
 
-## 🧰 الأدوات المستخدمة:
+🔄 يتعرف تلقائياً على وضع النظام عند أول زيارة
 
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Vite](https://vitejs.dev/)
-- [PostCSS](https://postcss.org/)
+📱 متجاوب بشكل كامل مع جميع الأجهزة
 
----
+🧪 زر تبديل مخصص برسوم متحركة باستخدام ::before و peer
 
-## 🚀 خطوات الاستخدام:
+📂 هيكل المشروع
 
-1. **انسخ المشروع من القالب:**
+📦 المشروع/
+ ┣ 📄 index.html
+ ┣ 📁 src/
+ ┃ ┣ 📄 main.js         ← يتحكم في منطق التبديل بين الثيمات
+ ┃ ┗ 📄 style.css       ← تعليمات Tailwind والتخصيصات
+ ┣ 📄 tailwind.config.js
+ ┣ 📄 package.json
 
-   > اضغط على زر `Use this template` أعلى الصفحة
+🚀 التثبيت والتشغيل
 
-2. **ثبّت الحزم:**
-
-```bash
 npm install
-```
-
-3. **ابدأ الخادم المحلي:**
-
-```bash
 npm run dev
-```
 
----
+📸 المعاينة
 
-## ⚠️ ملاحظة مهمة:
 
-لو نسخت الملفات يدويًا أو بدأت مشروع من الصفر، نفذ الأوامر التالية:
 
-```bash
-npm init -y
-npm install -D tailwindcss postcss autoprefixer vite
-npx tailwindcss init -p
-```
+ملاحظة: تأكد من إضافة peer-checked:* إلى safelist في ملف إعدادات Tailwind حتى لا تُحذف أثناء الإنتاج.
 
-وتأكد أن الملفات التالية موجودة ومضبوطة:
+🛠️ التخصيص
 
-- `tailwind.config.js`
-- `postcss.config.js`
-- `vite.config.js`
-- `src/style.css` (وفيه أوامر Tailwind)
-- `index.html` (يربط بملف `/src/style.css`)
+يمكنك التعديل أو توسيع النموذج بسهولة باستخدام أدوات Tailwind، أو إضافة إضافات مثل:
 
----
+@tailwindcss/forms — لتنسيق النماذج
 
-## 🧪 مثال استخدام:
+@tailwindcss/typography — إذا أردت إضافة محتوى على شكل مدونة
 
-```html
-<h1 class="text-3xl text-blue-600 font-bold">Hello Tailwind!</h1>
-```
+📜 الرخصة
 
----
+MIT — حر للاستخدام والتعديل.
 
-## ✅ جاهز للاستخدام في مشاريعك الشخصية أو التجارية.
+صنع بحب 💙 بواسطة فراس
 
-ساهم في تطويره أو استخدمه كمصدر للتعلم.
-
----
-
-## 💡 صاحب القالب: [@ferasraj](https://github.com/ferasraj)
